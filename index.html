@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="https://kit.fontawesome.com/f79b5f802c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="projeto.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./imagens/logo2.png" alt="Cyber Tech logo">
+            </div>
+        </div>
+        <div class="menu-nav">
+            <nav class="menu-navigation">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="https://www.linkedin.com/in/viniciusdev/" id="contato">Contato</a>
+                <a href="#" id="sign-up">Já tem uma conta?</a>
+            </nav>
+        </div>
+    </header>
+    <div class="inicio" id="inicio">
+        <div class="left" data-aos="fade-right" data-aos-duration="2200">
+        <div class="conteudo">
+        <h1 id="titulo1">Inscreva-se agora</h1>
+        <h1 id="titulo2">Na Cyber Tech!</h1>
+        <p>Inscreva-se agora na Cyber Tech, aqui nós oferecemos os melhores cursos para desenvolvedores Front-End, Back-End e também FullStack, contando com as melhores ferramentas e Frameworks da atualidade.<br>Junte-se a nós!!</p>
+        <input type="text" placeholder="Nome" id="nome" name="name">
+        <input type="email" placeholder="Email" id="email" name="email">
+        <button type="submit" onclick="Validate()">Enviar</button><br>
+        </div>
+        </div>
+        <div class="right" data-aos="zoom-in-up" data-aos-duration="2100">
+            <img src="./imagens/anatomy.png" alt="Inteligência Artificial logo">
+        </div>
+    </div>
+    <div class="separador">
+        <h3>Sobre nós</h3>
+    </div>
+    <div class="sobre" id="sobre">
+        <div class="container">
+            <div class="titulosobre" data-aos="fade-up">
+                <h1 class="titulo-principal">
+                <span>&copy Sobre a</span><br>
+                <span>Cyber Tech</span>
+            </h1>
+            </div>
+            <div class="conteudo-sobre" data-aos="fade-right"
+            data-aos-duration="3000">
+                <h2>
+                    Somos parte de um grupo de empresas que acredita no poder da educação e da tecnologia para transformar as pessoas e suas carreiras.
+                </h2>
+                <p>
+                    Sabemos que o trabalho em Tech mudou. As profissões se tornaram mais líquidas e as fronteiras entre elas já não estão bem definidas.
+                    Apenas se especializar em desenvolvimento de software não basta para ser um bom dev.
+                    Para realmente entregar resultados é necessário que, além de aprofundar e mergulhar de cabeça na sua área, você também navegue em outras vertentes de tecnologia, como UX, Marketing Digital ou Data Science, por exemplo.
+                    A Cyber Tech carrega a percepção de que o profissional de hoje precisa ser um profissional atualizado.
+                </p>
+            </div>
+        </div>
+        <div class="container-imagens">
+            <div class="animation-svg" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
+                <img src="./imagens/animationsobre.svg" alt="Animation">
+                <p>Contamos com os melhores profissionais<br>
+                da área da educação, para uma melhor<br>
+                experiência aos alunos sempre lidando<br>
+                e tirando todas as dúvidas para uma <br>
+                melhor formação.</p>
+            </div>
+            <div class="image-neural" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
+                <img src="./imagens/artificial2.png" alt="Neural">
+                <p>Somos uma das melhores em <br>
+                cursos para criação de Inteligência<br>
+                Artificial e redes neurais da América<br>
+                Latina.</p>
+            </div>
+            <div class="image-front" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1100">
+                <img src="./imagens/frontimage.png" alt="Machine-Learning">
+                <p>Não ficamos para trás quando o<br>
+                assunto é formar nossos alunos<br>no desenvolvimento web
+                em <br>Front-End, Back-End ou<br>
+                FullStack.</p>
+            </div>
+        </div>
+        <div class="points-brazil" data-aos="fade-right">
+            <img src="./imagens/mapabrasil.png" alt="">
+            <p data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">Temos 38 polos em várias regiões do Brasil,<br>
+                somos umas das primeiras referência em todas<br>
+                pela nossa qualidade e acessibilidade.</p>
+        </div>
+    </div>
+    <div class="separador">
+        <h3>Já tem uma conta?</h3>
+    </div>
+
+    <div class="main">
+        <div class="left-side" data-aos="zoom-in-right" data-aos-duration="2000">
+            <h1>Faça login e<br>Entre para nosso time!!</h1>
+            <img src="./imagens/artificialintelligence.svg" class="left-side-animation">
+        </div>
+        <div class="right-side">
+            <div class="card-login" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2400">
+                <h1>LOGIN</h1>
+                <div class="input-area">
+                    <label for="usuario">User:</label>
+                    <input type="email" name="usuario" placeholder="Email" id="inp">
+                    <p id="error-message"></p>
+                </div>
+                <div class="input-area">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" placeholder="Password" id="inp1">
+                    <p id="error-message1"></p>
+                </div>
+                <button class="btn-login" onclick="RequiredField()">Login</button>
+            </div>
+        </div>
+    </div>
+    <div class="separador">
+        <h3>Serviços</h3>
+    </div>
+
+    <div class="services">
+        <div class="container-titulo-and-paragraph">
+            <div class="content-title-paragraph">
+            <h1 data-aos="fade-right" data-aos-duration="2000">Nossos serviços</h1>
+            <p data-aos="fade-up" data-aos-duration="2000">Também prestamos serviços para empresas na área da Tecnologia, estamos sempre<br>
+            atualizando os Softwares e automações das empresas Multinacionais</p>
+            </div>
+            </div>
+        <div class="container-services">
+            <div class="automation-div" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="100">
+                <img src="./imagens/automation.svg" alt="animation automation">
+                <p>Usamos nossos serviços para ajudar<br>
+                empresas na automatização de <br>
+                mensagens para clientes, ou chatbots<br>
+                para suporte rápido.</p>
+            </div>
+            <div class="intelligence-div" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1100">
+                <img src="./imagens/IA.svg" alt="IA animation">
+                <p>Oferecemos nossas IAs (Inteligência<br>
+                    Artificial) para melhor obtenção de<br>
+                    resultados para pesquisas e sugestões<br>
+                    para os clientes.</p>
+            </div>
+            <div class="frontend-div" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1200">
+                <img src="./imagens/frontimage.png" alt="Front-End image">
+                <p>Disponibilizamos os melhores<br>
+                    profissionais em Design e FrontEnd<br>
+                    para deixar o seu site com a sua<br>
+                    cara e gosto e com melhor<br>
+                    acessibilidade aos clientes</p>
+            </div>
+    
+        </div>
+        <div class="second-services">
+            <div class="database" data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
+                <img src="./imagens/DATABASE.svg" alt="Banco de dados image">
+                <p>Damos ainda mais suporte e <br>
+                    segurança aos Bancos de Dados<br>
+                    da nossa empresa ou externos.</p>
+            </div>
+            <div class="software" data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1100">
+                <img src="./imagens/software-animation.svg" alt="Software-animation">
+                <p>Usamos as melhores ferramentas da<br>
+                atualidade para criarmos um software<br>
+                próprio para a sua empresa sempre<br>
+                dando suporte.<br>
+                </p>
+            </div>
+            <div class="framework" data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1200">
+                <img src="./imagens/framework.svg" alt="Framework-image">
+                <p>Com os nossos Frameworks junto com<br>
+                    os já existentes damos um up nas <br>
+                    funcionalidades dos Softwares para<br>
+                     um melhor desempenho dos funcionários<br>
+                     e da sua empresa.<br>
+                    </p>
+            </div>
+        </div>
+        <div class="contratar-servico">
+            <div class="left-content-write">
+                <h2 data-aos="flip-up"
+                data-aos-duration="2000">Suporte corporativa que<br>
+                    auxilia empresas em<br>
+                    todos os momentos</h2>
+                <p data-aos="fade-right"
+                data-aos-duration="2000">
+                    Em um cenário de alta procura por profissionais com <br>
+                    qualificação em tecnologia e escassez de talentos,<br>
+                    impulsionamos organizações de diferentes tamanhos e<br>
+                    setores para vencerem desafios.
+                </p>
+                <p>Contrate-nos para descobrir como ajudamos sua empresa.</p>
+                <p id="contratar"><a href="#" id="click">Clique aqui</a></p>
+            </div>
+            <div class="right-content-image" data-aos="flip-left"
+            data-aos-duration="2000">
+                <img src="./imagens/contract.png" alt="">
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="Validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Righteous&family=Roboto&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #00a2ff;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 80px;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 59px;
+}
+
+.menu-nav {
+    width: 55%;
+}
+
+.menu-navigation a {
+    padding-right: 30px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu-navigation a:hover {
+    color: #2e35ad;
+}
+
+.menu-nav nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, rgb(0, 26, 255), #00eeff);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu-nav nav a:hover::after{
+    width: 30px;
+}
+
+#sign-up {
+    transition: all 0.4s;
+    border: 2px solid #00a2ff;
+}
+
+#sign-up:hover {
+    border-radius: 8px 0px;
+    border: 2px solid #2e35ad;
+}
+
+.inicio {
+    background-image: url('./imagens/fundoini.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.left {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    width: 50vw;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right > img {
+    width: 550px;
+    height: 450px;
+    transition: all 0.3s;
+}
+
+.right > img:hover {
+    transform: scale(1.1);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90vh;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    position: static;
+}
+
+.conteudo > #titulo1 {
+    color: #00a2ff;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo > #titulo2 {
+    color: #00a2ff;
+    font-size: 42px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo > p {
+    font-size: 20px;
+    color: white;
+    transition: all 0.4s;
+}
+
+.conteudo > p:hover {
+    transform: scale(1.2);
+    margin-left: 28px;
+
+}
+
+.conteudo > input {
+    height: 50px;
+    width: 300px;
+    border-radius: 18px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Sarala', sans-serif;
+}
+
+.conteudo > button {
+    width: 180px;
+    padding: 17px;
+    border-radius: 0 20px;
+    font-size: 18px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 800;
+    outline: none;
+    border: 4px solid #00a2ff;
+    background-color: #00a2ff;
+    color: white;
+    box-shadow: 1px 1px 5px #00a2ff;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.conteudo > button:hover {
+    background-color: #13405f;
+    border-radius: 20px 0;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.separador {
+    width: 100%;
+    height: 10vh;
+    background-color: #00a2ffbb;
+}
+
+.separador h3 {
+    text-align: center;
+    padding: 7px;
+    font-size: 27pt;
+    color: white;
+    font-family: 'Sarala', sans-serif;
+}
+
+.sobre {
+    width: 100%;
+    height: 220vh;
+    background-image: url(./imagens/fundosobre.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.sobre > .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 60vh;
+}
+
+.titulosobre {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: bisque;
+    font-size: 26px;
+}
+
+.container {
+    margin-bottom: 85px;
+}
+
+.conteudo-sobre {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 22px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    margin-right: 20px;
+}
+
+.conteudo-sobre p {
+    font-size: 17px;
+}
+
+.container-imagens {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.animation-svg img{
+    width: 200px;
+    margin-bottom: 12px;
+}
+
+.animation-svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 30vw;
+    font-size: 20px;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 28px;
+    margin-right: 12px;
+    font-family: 'Sarala', sans-serif;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px black;
+}
+
+.animation-svg:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.image-neural img {
+    width: 300px;
+    margin-bottom: 12px;
+}
+
+.image-neural {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 28px;
+    font-family: 'Sarala', sans-serif;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px black;
+}
+
+.image-neural:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.image-front img {
+    width: 180px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.image-front {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.295);
+    margin-left: 13px;
+    border-radius: 28px;
+    font-family: 'Sarala', sans-serif;
+    transition: all 0.4s;
+    box-shadow: 1px 1px 5px black;
+}
+
+.image-front:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.points-brazil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 6px;
+    font-size: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: bisque;
+    padding: 60px;
+    padding-right: 160px;
+    transition: all 0.4s;
+}
+
+.points-brazil img {
+    width: 450px;
+    transition: all 0.4s;
+}
+
+.points-brazil img:hover {
+    margin-top: 13px;
+    transform: scale(1.1);
+    filter: blur(1.1);
+}
+
+.points-brazil p {
+    height: 400px;
+    border-radius: 28px;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+    transition: all 0.3s;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.points-brazil p:hover {
+    opacity: 5;
+}
+
+/*contato começa daqui*/
+
+.contate {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagens/fundosobre.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.contate > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.titulo-head {
+    font-size: 20pt;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 35%;
+    height: 90%;
+    color: bisque;
+}
+
+
+/*login*/
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagens/fundoin.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sarala', sans-serif;
+}
+
+.left-side {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-side > h1 {
+    padding: 12px;
+    color: #00a2ff;
+    background: #23323ef1;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    font-size: 3vw;
+    transition:  letter-spacing 0.4s;
+}
+
+.left-side > h1:hover {
+    letter-spacing: 2px;
+}
+
+.left-side-animation {
+    width: 35vw;
+}
+
+.right-side {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    background: #23323ef1;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    font-weight: 800;
+    color: #00a2ff;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.input-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.input-area > input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background: #263744;
+    color: #f0ffffde;
+    outline: none;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+input:hover {
+    background-color: rgba(10, 78, 141, 0.685);
+}
+
+.input-area > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.input-area > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    margin: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00a2ff;
+    box-shadow: 0px 10px 40px -12px #00a2ff;
+    cursor: pointer;
+    transition: transform 0.2s, letter-spacing 0.4s;
+}
+
+.btn-login:active {
+    transform: scale(0.9);
+}
+
+.btn-login:hover {
+    letter-spacing: 6px;
+}
+
+/*SERVIÇOS*/
+
+.services  {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 230vh;
+    background-image: url(./imagens/fundosobre.png);
+}
+
+.container-titulo-and-paragraph {
+    gap: 6px;
+    font-size: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: bisque;
+    text-align: center;
+}
+
+.content-title-paragraph{
+    padding-top: 30px;
+}
+
+.container-services {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.automation-div {
+    box-shadow: 1px 1px 5px black;
+    margin-left: 13px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.295);
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    transition: all 0.3s;
+}
+
+.automation-div:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.automation-div img {
+    width: 200px;
+}
+
+.intelligence-div {
+    box-shadow: 1px 1px 5px black;
+    margin-left: 13px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.295);
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    transition: all 0.3s;
+}
+
+.intelligence-div:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.intelligence-div IMG {
+    width: 200px;
+}
+
+.frontend-div {
+    box-shadow: 1px 1px 5px black;
+    margin-left: 13px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.295);
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 32%;
+    transition: all 0.3s;
+}
+
+.frontend-div:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.frontend-div img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.second-services {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.database {
+    box-shadow: 1px 1px 5px black;
+    margin-left: 13px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.295);
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.database:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.database img {
+    width: 200px;
+}
+
+.software {
+    box-shadow: 1px 1px 5px black;
+    margin-left: 13px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.295);
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.software:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.software img {
+    width: 200px;
+}
+
+.framework {
+    box-shadow: 1px 1px 5px black;
+    margin-left: 13px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.295);
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 32%;
+    transition: all 0.3s;
+}
+
+.framework:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.framework img {
+    width: 200px;
+}
+/* parte 2 servico*/
+
+.contratar-servico {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content-write {
+    width: 40%;
+    border-radius: 20px;
+    gap: 6px;
+    font-size: 20px;
+    color: bisque;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-content-write h2 {
+    margin-bottom: 23px;
+}
+
+#contratar {
+    margin-left: 200px;
+}
+
+#click {
+    color: red;
+}
+
+.right-content-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 160px;
+}
+
+.right-content-image img {
+    width: 280px;
+}
